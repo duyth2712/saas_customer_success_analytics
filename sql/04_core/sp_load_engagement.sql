@@ -7,27 +7,30 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    TRUNCATE TABLE dbo.engagement;
+    BEGIN TRANSACTION;
 
-    INSERT INTO dbo.engagement
-    (
-		customer_id,
-		last_login_date,
-		monthly_active_users,
-		feature_usage_score
-	)
-	SELECT
-		customer_id,
-		last_login_date,
-		monthly_active_users,
-		feature_usage_score
-	FROM stag.v_customer_success_validate
-	WHERE
-		invalid_mandatory_flag = 0
-	AND invalid_date_flag = 0
-	AND invalid_usage_flag = 0
-	AND invalid_retention_flag = 0
-	AND invalid_domain_flag = 0
-	AND invalid_numeric_flag = 0;
+    BEGIN TRY
+        -- Update existing engagement
+        UPDATE t
+        SET
+            last_login_date      = s.last_login_date,     
+            monthly_active_users = s.monthly_active_users,
+            feature_usage_score  = s.feature_usage_score
+        FROM dbo.engagement t
+        JOIN val.customer_success_valid s
+            ON t.customer_id = s.customer_id;
+
+        -- Insert new engagement
+        INSERT INTO dbo.engagement (customer_id, last_login_date, monthly_active_users, feature_usage_score)
+        SELECT s.customer_id, s.last_login_date, s.monthly_active_users, s.feature_usage_score
+        FROM val.customer_success_valid s
+        WHERE NOT EXISTS (SELECT 1 FROM dbo.engagement t WHERE t.customer_id = s.customer_id);
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        THROW;
+    END CATCH
 END;
 GO

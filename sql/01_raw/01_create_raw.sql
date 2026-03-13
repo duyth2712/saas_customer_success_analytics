@@ -9,6 +9,20 @@ BEGIN
 END;
 GO
 
+-- Create a run log table to generate batch_id
+IF OBJECT_ID('raw.load_run', 'U') IS NULL
+BEGIN
+    CREATE TABLE raw.load_run
+    (
+        batch_id    BIGINT IDENTITY(1,1) NOT NULL
+            CONSTRAINT PK_raw_load_run PRIMARY KEY,
+        load_dttm   DATETIME2(0) NOT NULL
+            CONSTRAINT DF_raw_load_run_load_dttm DEFAULT SYSDATETIME(),
+        source_file NVARCHAR(4000) NULL
+    );
+END;
+GO
+
 -- Create table raw.customer_success_load 
 IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'customer_success_load' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='raw'))
 	DROP TABLE raw.customer_success_load;
@@ -58,6 +72,7 @@ CREATE TABLE raw.customer_success
     last_success_touch_date     VARCHAR(20),
     notes                       NVARCHAR(MAX),
 
+	batch_id BIGINT NOT NULL,
 	load_id BIGINT IDENTITY(1,1) NOT NULL,
     load_dttm DATETIME2(0) NOT NULL
         CONSTRAINT DF_raw_customer_success_load_dttm DEFAULT SYSDATETIME()

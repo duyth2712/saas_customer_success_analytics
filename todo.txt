@@ -1,3 +1,0 @@
-script load core từ VIEW + filter invalid rows
-
-https://chatgpt.com/share/6989ab3b-474c-8002-85e8-55acad0ea128

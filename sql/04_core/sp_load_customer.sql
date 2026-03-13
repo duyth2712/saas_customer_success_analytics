@@ -1,4 +1,4 @@
-IF OBJECT_ID('dbo.sp_load_customer', 'P') IS NOT NULL
+﻿IF OBJECT_ID('dbo.sp_load_customer', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_customer;
 GO
 
@@ -7,32 +7,31 @@ AS
 BEGIN
     SET NOCOUNT ON;
 
-    TRUNCATE TABLE dbo.customer;
+    BEGIN TRANSACTION;
 
-    INSERT INTO dbo.customer
-    (
-        customer_id,
-        customer_name,
-        industry,
-        account_manager,
-        user_count,
-        snapshot_date,
-        load_date
-    )
-    SELECT DISTINCT
-        customer_id,
-        customer_name,
-        industry,
-        account_manager,
-        user_count,
-        CAST(load_date AS DATE) AS snapshot_date,
-        GETDATE()               AS load_date
-    FROM stag.v_customer_success_validate
-    WHERE invalid_mandatory_flag = 0
-      AND invalid_date_flag = 0
-      AND invalid_usage_flag = 0
-      AND invalid_retention_flag = 0
-      AND invalid_domain_flag = 0
-      AND invalid_numeric_flag = 0;
+    BEGIN TRY
+        --Update existing customers
+        UPDATE c
+        SET 
+            customer_name   = s.customer_name,
+            industry        = s.industry,
+            account_manager = s.account_manager,
+            user_count      = s.user_count
+        FROM dbo.customer c
+        JOIN val.customer_success_valid s
+            ON c.customer_id = s.customer_id;
+
+		-- Insert new customers
+        INSERT INTO dbo.customer (customer_id, customer_name, industry, account_manager, user_count)
+        SELECT s.customer_id, s.customer_name, s.industry, s.account_manager, s.user_count
+        FROM val.customer_success_valid s
+        WHERE NOT EXISTS (SELECT 1 FROM dbo.customer c WHERE c.customer_id = s.customer_id);
+
+        COMMIT TRANSACTION;
+    END TRY
+    BEGIN CATCH
+        ROLLBACK TRANSACTION;
+        THROW;
+    END CATCH
 END;
 GO
