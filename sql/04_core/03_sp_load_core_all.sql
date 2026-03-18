@@ -25,7 +25,7 @@ BEGIN
         EXEC dbo.sp_load_retention_risk;
 
         -- Load cs_activity
-        EXEC dbo.sp_load_cs_activity;
+        EXEC dbo.sp_load_cs_Activity;
 
     END TRY
     BEGIN CATCH

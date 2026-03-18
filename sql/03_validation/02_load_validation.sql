@@ -4,8 +4,8 @@
    - Split into valid / reject
    =========================== */
 
-TRUNCATE TABLE val.customer_success_valid;
-TRUNCATE TABLE val.customer_success_reject;
+TRUNCATE TABLE val.CustomerSuccessValid;
+TRUNCATE TABLE val.CustomerSuccessReject;
 GO
 
 IF OBJECT_ID('tempdb..#dq','U') IS NOT NULL
@@ -68,9 +68,9 @@ SELECT
         CASE WHEN s.churn_risk_score IS NOT NULL AND (s.churn_risk_score < 0 OR s.churn_risk_score > 1) THEN 'churn_risk_out_of_range; ' ELSE '' END
     ))), '') AS dq_issue
 INTO #dq
-FROM stag.customer_success s;
+FROM stag.CustomerSuccess s;
 
-INSERT INTO val.customer_success_valid
+INSERT INTO val.CustomerSuccessValid
 (
     batch_id, load_dttm,
     customer_id, customer_name, industry, account_manager,
@@ -89,7 +89,7 @@ SELECT
 FROM #dq
 WHERE dq_is_valid = 1;
 
-INSERT INTO val.customer_success_reject
+INSERT INTO val.CustomerSuccessReject
 (
     batch_id, load_dttm,
     customer_id, customer_name, industry, account_manager,

@@ -1,15 +1,15 @@
 ﻿DECLARE @batch_id BIGINT =
 (
-    SELECT MAX(batch_id) FROM raw.load_run
+    SELECT MAX(batch_id) FROM raw.LoadRun
 );
 
-DELETE FROM stag.customer_success
+DELETE FROM stag.CustomerSuccess
 WHERE batch_id = @batch_id
 
---TRUNCATE TABLE stag.customer_success;
+--TRUNCATE TABLE stag.CustomerSuccess;
 --GO
 
-INSERT INTO stag.customer_success
+INSERT INTO stag.CustomerSuccess
 (	
 	batch_id,
     load_dttm,
@@ -61,8 +61,8 @@ SELECT
     TRY_CAST(r.last_success_touch_date AS DATE),
     r.notes
 
-FROM raw.customer_success r
-JOIN raw.load_run lr
+FROM raw.CustomerSuccess r
+JOIN raw.LoadRun lr
   ON lr.batch_id = r.batch_id
 WHERE r.batch_id = @batch_id;
 GO

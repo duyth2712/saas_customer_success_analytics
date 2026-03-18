@@ -10,9 +10,9 @@ END;
 GO
 
 -- Create a run log table to generate batch_id
-IF OBJECT_ID('raw.load_run', 'U') IS NULL
+IF OBJECT_ID('raw.LoadRun', 'U') IS NULL
 BEGIN
-    CREATE TABLE raw.load_run
+    CREATE TABLE raw.LoadRun
     (
         batch_id    BIGINT IDENTITY(1,1) NOT NULL
             CONSTRAINT PK_raw_load_run PRIMARY KEY,
@@ -23,10 +23,10 @@ BEGIN
 END;
 GO
 
--- Create table raw.customer_success_load 
-IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'customer_success_load' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='raw'))
-	DROP TABLE raw.customer_success_load;
-CREATE TABLE raw.customer_success_load
+-- Create table raw.CustomerSuccessLoad 
+IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'CustomerSuccessLoad' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='raw'))
+	DROP TABLE raw.CustomerSuccessLoad;
+CREATE TABLE raw.CustomerSuccessLoad
 (
     customer_id                 VARCHAR(50),
     customer_name               NVARCHAR(255),
@@ -48,10 +48,10 @@ CREATE TABLE raw.customer_success_load
     notes                       NVARCHAR(MAX),
 );
 
--- Create table raw.customer_success
-IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'customer_success' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='raw'))
-	DROP TABLE raw.customer_success;
-CREATE TABLE raw.customer_success
+-- Create table raw.CustomerSuccess
+IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'CustomerSuccess' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='raw'))
+	DROP TABLE raw.CustomerSuccess;
+CREATE TABLE raw.CustomerSuccess
 (
     customer_id                 VARCHAR(50),
     customer_name               NVARCHAR(255),

@@ -5,10 +5,10 @@ BEGIN
 END;
 GO
 
-IF OBJECT_ID('val.customer_success_valid', 'U') IS NOT NULL
-    DROP TABLE val.customer_success_valid;
+IF OBJECT_ID('val.CustomerSuccessValid', 'U') IS NOT NULL
+    DROP TABLE val.CustomerSuccessValid;
 GO
-CREATE TABLE val.customer_success_valid
+CREATE TABLE val.CustomerSuccessValid
 (
     batch_id             BIGINT        NOT NULL,
     load_dttm           DATETIME2(0)   NOT NULL,
@@ -41,10 +41,10 @@ CREATE TABLE val.customer_success_valid
 );
 GO
 
-IF OBJECT_ID('val.customer_success_reject', 'U') IS NOT NULL
-    DROP TABLE val.customer_success_reject;
+IF OBJECT_ID('val.CustomerSuccessReject', 'U') IS NOT NULL
+    DROP TABLE val.CustomerSuccessReject;
 GO
-CREATE TABLE val.customer_success_reject
+CREATE TABLE val.CustomerSuccessReject
 (
     batch_id            BIGINT        NOT NULL,
     load_dttm          DATETIME2(0)   NOT NULL,
@@ -82,17 +82,17 @@ CREATE TABLE val.customer_success_reject
 GO
 
 CREATE INDEX IX_val_customer_success_valid_customer_id
-ON val.customer_success_valid(customer_id);
+ON val.CustomerSuccessValid(customer_id);
 GO
 
 CREATE INDEX IX_val_customer_success_reject_customer_id
-ON val.customer_success_reject(customer_id);
+ON val.CustomerSuccessReject(customer_id);
 GO
 
 CREATE INDEX IX_val_customer_success_valid_load
-ON val.customer_success_valid(batch_id, load_dttm);
+ON val.CustomerSuccessValid(batch_id, load_dttm);
 GO
 
 CREATE INDEX IX_val_customer_success_reject_load
-ON val.customer_success_reject(batch_id, load_dttm);
+ON val.CustomerSuccessReject(batch_id, load_dttm);
 GO

@@ -9,10 +9,10 @@ BEGIN
 END;
 GO
 
--- DDL for stag.customer_success table
-IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'customer_success' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='stag'))
-	DROP TABLE stag.customer_success;
-CREATE TABLE stag.customer_success
+-- DDL for stag.CustomerSuccess table
+IF EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'CustomerSuccess' and schema_id = (SELECT schema_id FROM sys.schemas WHERE name='stag'))
+	DROP TABLE stag.CustomerSuccess;
+CREATE TABLE stag.CustomerSuccess
 (
 	batch_id				BIGINT NOT NULL,
     load_dttm				DATETIME2(0) NOT NULL,

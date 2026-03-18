@@ -10,22 +10,22 @@ BEGIN
     BEGIN TRANSACTION;
 
     BEGIN TRY
-        --Update existing customers
+        --Update existing Customers
         UPDATE c
         SET 
             customer_name   = s.customer_name,
             industry        = s.industry,
             account_manager = s.account_manager,
             user_count      = s.user_count
-        FROM dbo.customer c
-        JOIN val.customer_success_valid s
+        FROM dbo.Customer c
+        JOIN val.CustomerSuccessValid s
             ON c.customer_id = s.customer_id;
 
-		-- Insert new customers
-        INSERT INTO dbo.customer (customer_id, customer_name, industry, account_manager, user_count)
+		-- Insert new Customers
+        INSERT INTO dbo.Customer (customer_id, customer_name, industry, account_manager, user_count)
         SELECT s.customer_id, s.customer_name, s.industry, s.account_manager, s.user_count
-        FROM val.customer_success_valid s
-        WHERE NOT EXISTS (SELECT 1 FROM dbo.customer c WHERE c.customer_id = s.customer_id);
+        FROM val.CustomerSuccessValid s
+        WHERE NOT EXISTS (SELECT 1 FROM dbo.Customer c WHERE c.customer_id = s.customer_id);
 
         COMMIT TRANSACTION;
     END TRY
@@ -35,3 +35,4 @@ BEGIN
     END CATCH
 END;
 GO
+EXEC dbo.sp_load_customer;
