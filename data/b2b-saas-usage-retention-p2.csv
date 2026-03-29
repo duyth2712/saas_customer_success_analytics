@@ -1,0 +1,201 @@
+customer_id,customer_name,industry,account_manager,subscription_start_date,subscription_end_date,subscription_status,plan_type,monthly_fee,user_count,last_login_date,monthly_active_users,feature_usage_score,retention_rate_6m,retention_rate_12m,churn_risk_score,last_success_touch_date,notes
+APEX-PRO_001,Apex Systems,Biotechnology,t.harris,2021-01-01,,active,Pro,418.99,19,2026-02-11,5,46.1,83.3,85.1,0.17,2025-12-29,Auto-generated note.
+QUANTUM-PRO_002,Quantum Network,Agriculture,n.riley,2026-03-02,,trial,Pro,0,28,2026-03-18,24,88.9,,,0.5,2026-02-16,Auto-generated note.
+QUANTUM-BSC_003,Quantum Services,Government,k.jones,2026-03-08,,trial,Basic,0,2,2026-02-12,0,19.5,,,0.17,2026-02-20,Auto-generated note.
+ALPHA-PRO_004,Alpha Partners,Healthcare,,2025-10-09,,active,Pro,418.99,53,2026-02-10,27,88.6,,,0.73,2026-01-31,Auto-generated note.
+NEXUS-PRO_005,Nexus Technologies,Pharmaceutical,,2023-09-30,,active,Pro,418.99,60,2026-03-01,39,22.9,97.4,60.8,0.3,2026-01-19,Auto-generated note.
+ZENITH-PRO_006,Zenith Services,Healthcare,j.smith,2022-08-23,,active,Pro,418.99,56,2026-03-10,54,24.2,71.2,70.6,0.67,2026-01-28,Auto-generated note.
+BETA-BSC_007,Beta Labs,Aerospace,m.davis,2025-08-10,,active,Basic,29.99,11,2026-01-28,2,25.5,96.9,,0.41,2026-01-12,Auto-generated note.
+VERTEX-BSC_008,Vertex Corp,Construction,k.jones,2020-11-04,,paused,Basic,29.99,3,2026-03-15,2,24.4,92.2,78.6,0.35,2026-01-30,Auto-generated note.
+ALPHA-ENT_009,Alpha Corp,Finance,t.harris,2026-03-11,,trial,Enterprise,0,1128,2026-03-18,25,14.0,,,0.67,2026-03-05,Auto-generated note.
+BETA-BSC_010,Beta Systems,Government,t.harris,2026-03-22,,trial,Basic,0,5,2026-03-19,1,92.2,,,0.14,2025-12-28,Auto-generated note.
+DELTA-BSC_011,Delta Systems,Finance,n.riley,2026-03-20,,trial,Basic,0,2,2026-02-21,2,94.0,,,0.39,2026-02-03,Auto-generated note.
+DELTA-PRO_012,Delta Group,Media,,2025-07-24,2025-12-30,expired,Pro,418.99,74,2025-12-13,56,78.0,77.3,,0.86,2026-01-03,Auto-generated note.
+HORIZON-ENT_013,Horizon Group,Research,m.davis,2025-04-17,2025-10-15,expired,Enterprise,4100,1345,2025-08-30,560,89.5,73.3,,0.83,2025-12-30,Auto-generated note.
+APEX-ENT_014,Apex Solutions,Retail,j.smith,2021-08-01,,active,Enterprise,4100,453,2026-02-07,307,86.1,76.1,73.9,0.09,2026-02-27,Auto-generated note.
+QUANTUM-BSC_015,Quantum Technologies,Transportation,,2025-02-27,,active,Basic,29.99,4,2026-02-23,0,15.6,81.6,80.3,0.25,2026-01-05,Auto-generated note.
+ZENITH-PRO_016,Zenith Network,Professional Services,t.harris,2026-01-23,,active,Pro,418.99,63,2026-02-28,17,33.1,,,0.23,2025-12-30,Auto-generated note.
+GAMMA-PRO_017,Gamma Solutions,Construction,n.riley,2020-09-25,2023-07-12,expired,Pro,418.99,94,2021-09-30,6,75.6,75.0,60.3,0.98,2026-03-17,Auto-generated note.
+HORIZON-ENT_018,Horizon Solutions,Aerospace,k.jones,2026-03-07,,trial,Enterprise,0,159,2026-02-06,87,98.8,,,0.32,2026-02-06,Auto-generated note.
+QUANTUM-PRO_019,Quantum Network,Media,,2020-06-12,,active,Pro,418.99,63,2026-03-13,18,45.3,84.9,96.7,0.7,2026-02-20,Auto-generated note.
+HORIZON-PRO_020,Horizon Systems,Pharmaceutical,m.davis,2020-07-28,,active,Pro,418.99,59,2026-02-06,42,23.2,85.5,71.9,0.1,2026-03-10,Auto-generated note.
+ALPHA-PRO_021,Alpha Corp,Biotechnology,n.riley,2022-07-21,,active,Pro,418.99,52,2026-02-23,21,76.1,95.5,72.4,0.05,2026-01-03,Auto-generated note.
+VERTEX-PRO_022,Vertex Corp,Government,j.smith,2026-03-15,,trial,Pro,0,58,2026-03-12,52,87.0,,,0.71,2026-02-14,Auto-generated note.
+HORIZON-ENT_023,Horizon Labs,Food & Beverage,m.davis,2026-03-01,,trial,Enterprise,0,459,2026-02-18,312,62.8,,,0.63,2026-02-24,Auto-generated note.
+BETA-ENT_024,Beta Labs,Pharmaceutical,n.riley,2023-01-25,,active,Enterprise,4100,1912,2026-03-19,772,38.7,91.3,80.0,0.4,2026-02-02,Auto-generated note.
+VERTEX-PRO_025,Vertex Partners,Biotechnology,m.davis,2021-09-30,,active,Pro,418.99,70,2026-02-13,51,26.6,76.7,74.3,0.16,2026-03-01,Auto-generated note.
+ALPHA-ENT_026,Alpha Services,Advertising,t.harris,2020-01-07,,active,Enterprise,4100,481,2026-01-26,366,57.8,94.3,77.0,0.65,2026-01-05,Auto-generated note.
+ALPHA-ENT_027,Alpha Solutions,Consulting,,2024-12-21,,active,Enterprise,4100,1855,2026-02-27,1644,52.1,97.7,78.2,0.29,2026-03-09,Auto-generated note.
+NEXUS-ENT_028,Nexus Labs,Automotive,k.jones,2023-05-30,,active,Enterprise,4100,1269,2026-02-07,775,87.8,97.2,69.8,0.2,2026-03-05,Auto-generated note.
+HORIZON-PRO_029,Horizon Group,Food & Beverage,k.jones,2026-02-24,,trial,Pro,0,32,2026-01-30,15,80.5,,,0.14,2025-12-26,Auto-generated note.
+HORIZON-PRO_030,Horizon Corp,Agriculture,m.davis,2020-11-24,,active,Pro,418.99,16,2026-02-09,14,20.9,76.7,72.5,0.27,2026-03-04,Auto-generated note.
+GAMMA-ENT_031,Gamma Services,Media,n.riley,2026-03-19,,trial,Enterprise,0,1411,2026-02-05,331,10.9,,,0.2,2026-03-14,Auto-generated note.
+DELTA-ENT_032,Delta Labs,Finance,k.jones,2021-03-18,,active,Enterprise,4100,1056,2026-02-10,282,47.4,91.9,89.3,0.08,2026-01-06,Auto-generated note.
+GAMMA-ENT_033,Gamma Services,Pharmaceutical,j.smith,2026-03-08,,trial,Enterprise,0,369,2026-01-28,358,58.3,,,0.27,2026-02-04,Auto-generated note.
+QUANTUM-BSC_034,Quantum Labs,Technology,j.smith,2021-04-21,,active,Basic,29.99,10,2026-02-21,0,23.6,92.6,66.2,0.26,2026-02-09,Auto-generated note.
+HORIZON-PRO_035,Horizon Network,Biotechnology,,2021-08-30,,active,Pro,418.99,76,2026-02-05,8,42.4,97.7,93.4,0.24,2026-02-23,Auto-generated note.
+QUANTUM-ENT_036,Quantum Technologies,Technology,t.harris,2020-06-29,,active,Enterprise,4100,614,2026-03-17,132,61.8,94.4,95.4,0.26,2026-03-04,Auto-generated note.
+ZENITH-BSC_037,Zenith Systems,Professional Services,k.jones,2022-07-17,,active,Basic,29.99,15,2026-02-28,10,11.8,87.2,62.2,0.53,2026-02-02,Auto-generated note.
+HORIZON-PRO_038,Horizon Systems,Aerospace,t.harris,2020-02-29,,active,Pro,418.99,23,2026-03-12,12,91.3,87.9,74.4,0.54,2026-02-28,Auto-generated note.
+NEXUS-BSC_039,Nexus Services,Biotechnology,,2025-03-09,,active,Basic,29.99,2,2026-02-05,1,36.0,74.6,72.7,0.01,2026-01-05,Auto-generated note.
+GAMMA-PRO_040,Gamma Partners,Media,k.jones,2026-03-06,,trial,Pro,0,71,2026-02-23,51,31.9,,,0.54,2026-01-21,Auto-generated note.
+BETA-PRO_041,Beta Group,Energy,k.jones,2022-01-11,,active,Pro,418.99,94,2026-02-19,1,40.9,92.2,77.6,0.46,2026-01-02,Auto-generated note.
+QUANTUM-PRO_042,Quantum Systems,Pharmaceutical,m.davis,2025-09-23,,active,Pro,418.99,47,2026-02-17,10,53.0,71.9,,0.08,2026-03-21,Auto-generated note.
+ALPHA-PRO_043,Alpha Services,Testing,k.jones,2023-11-08,,active,Pro,418.99,33,2026-03-01,33,73.2,90.8,77.1,0.04,2026-02-27,Auto-generated note.
+NOVA-BSC_044,Nova Technologies,Automotive,k.jones,2026-03-22,,trial,Basic,0,6,2026-02-21,1,90.1,,,0.25,2025-12-23,Auto-generated note.
+DELTA-PRO_045,Delta Corp,Research,j.smith,2024-02-10,,paused,Pro,418.99,41,2026-02-05,35,87.9,77.4,68.1,0.65,2026-03-04,Auto-generated note.
+HORIZON-BSC_046,Horizon Technologies,Finance,t.harris,2024-09-30,,active,Basic,29.99,8,2026-03-17,3,38.3,86.2,69.8,0.04,2026-01-17,Auto-generated note.
+QUANTUM-ENT_047,Quantum Group,Professional Services,m.davis,2020-10-07,,active,Enterprise,4100,272,2026-02-18,115,64.9,86.8,89.8,0.42,2026-01-02,Auto-generated note.
+NEXUS-PRO_048,Nexus Solutions,Wholesale,m.davis,2020-07-18,2022-01-03,expired,Pro,418.99,98,2021-07-18,20,30.7,73.7,78.8,0.93,2026-02-13,Auto-generated note.
+BETA-PRO_049,Beta Partners,Pharmaceutical,,2023-01-21,,active,Pro,418.99,42,2026-02-15,10,56.1,96.6,65.5,0.17,2026-03-04,Auto-generated note.
+NOVA-PRO_050,Nova Partners,Automotive,,2021-03-10,,active,Pro,418.99,20,2026-02-28,13,11.0,76.2,90.5,0.23,2025-12-28,Auto-generated note.
+VERTEX-ENT_051,Vertex Solutions,Wholesale,,2020-05-27,2024-06-23,cancelled,Enterprise,4100,328,2021-01-15,95,76.7,88.9,85.5,0.99,2025-12-25,Auto-generated note.
+NEXUS-ENT_052,Nexus Solutions,Consulting,k.jones,2022-04-03,,active,Enterprise,4100,787,2026-02-09,248,63.6,72.5,67.7,0.62,2025-12-29,Auto-generated note.
+QUANTUM-ENT_053,Quantum Group,Government,m.davis,2021-04-03,,active,Enterprise,4100,258,2026-02-22,155,85.9,86.9,77.2,0.29,2026-02-18,Auto-generated note.
+NEXUS-ENT_054,Nexus Solutions,Wholesale,j.smith,2021-10-12,,active,Enterprise,4100,896,2026-03-17,399,91.7,83.3,68.1,0.26,2026-01-30,Auto-generated note.
+QUANTUM-PRO_055,Quantum Group,Marketing,n.riley,2022-08-26,,active,Pro,418.99,62,2026-02-18,37,35.9,76.6,89.4,0.64,2025-12-30,Auto-generated note.
+ALPHA-ENT_056,Alpha Partners,Aerospace,m.davis,2023-12-12,,active,Enterprise,4100,1866,2026-01-25,921,95.1,86.5,88.1,0.75,2026-02-15,Auto-generated note.
+GAMMA-ENT_057,Gamma Systems,Wholesale,j.smith,2024-02-27,,active,Enterprise,4100,1914,2026-02-08,815,72.4,94.5,65.0,0.17,2026-02-21,Auto-generated note.
+GAMMA-BSC_058,Gamma Technologies,Consulting,,2021-02-24,,active,Basic,29.99,13,2026-03-19,5,55.3,84.4,62.4,0.02,2026-01-27,Auto-generated note.
+BETA-PRO_059,Beta Systems,Professional Services,n.riley,2020-06-29,,active,Pro,418.99,39,2026-02-25,18,91.2,71.9,70.0,0.3,2026-01-20,Auto-generated note.
+NOVA-BSC_060,Nova Systems,Transportation,j.smith,2023-05-19,,active,Basic,29.99,4,2026-02-12,2,77.9,98.2,90.5,0.6,2026-02-19,Auto-generated note.
+DELTA-ENT_061,Delta Services,Healthcare,j.smith,2026-03-04,,trial,Enterprise,0,1682,2026-02-26,386,50.4,,,0.34,2026-01-26,Auto-generated note.
+ALPHA-ENT_062,Alpha Systems,Research,t.harris,2020-11-18,,active,Enterprise,4100,1868,2026-02-07,1296,71.4,82.5,77.5,0.03,2026-03-16,Auto-generated note.
+APEX-BSC_063,Apex Solutions,Media,k.jones,2026-02-25,,trial,Basic,0,4,2026-03-14,2,50.9,,,0.6,2026-03-13,Auto-generated note.
+NEXUS-ENT_064,Nexus Corp,Food & Beverage,t.harris,2026-03-11,,trial,Enterprise,0,668,2026-02-28,103,42.5,,,0.49,2026-01-11,Auto-generated note.
+HORIZON-PRO_065,Horizon Technologies,Automotive,n.riley,2022-07-21,,active,Pro,418.99,64,2026-02-19,21,68.1,77.6,85.6,0.71,2026-02-07,Auto-generated note.
+VERTEX-PRO_066,Vertex Technologies,Human Resources,n.riley,2023-09-21,,paused,Pro,418.99,24,2026-03-02,9,34.6,92.2,85.0,0.09,2026-02-16,Auto-generated note.
+QUANTUM-ENT_067,Quantum Partners,Testing,,2022-03-10,2023-02-22,expired,Enterprise,4100,116,2022-05-16,109,83.9,86.9,81.9,1.0,2026-03-08,Auto-generated note.
+NOVA-PRO_068,Nova Group,Construction,t.harris,2025-02-15,2025-07-09,expired,Pro,418.99,90,2025-03-06,83,44.5,85.1,72.4,0.96,2026-02-01,Auto-generated note.
+QUANTUM-PRO_069,Quantum Partners,Automotive,t.harris,2026-03-17,,trial,Pro,0,48,2026-01-28,27,26.9,,,0.24,2026-03-23,Auto-generated note.
+DELTA-ENT_070,Delta Technologies,Technology,n.riley,2026-02-21,,trial,Enterprise,0,392,2026-03-09,162,14.3,,,0.79,2026-02-23,Auto-generated note.
+ZENITH-BSC_071,Zenith Services,Transportation,j.smith,2022-07-04,,active,Basic,29.99,6,2026-02-13,1,96.0,91.4,68.7,0.21,2026-01-04,Auto-generated note.
+NEXUS-BSC_072,Nexus Systems,Biotechnology,m.davis,2023-06-13,,active,Basic,29.99,15,2026-03-02,12,34.8,96.4,82.8,0.03,2025-12-23,Auto-generated note.
+ZENITH-BSC_073,Zenith Partners,Construction,,2024-09-25,,active,Basic,29.99,11,2026-02-22,10,85.1,79.0,94.2,0.36,2026-01-12,Auto-generated note.
+VERTEX-ENT_074,Vertex Labs,Testing,m.davis,2021-02-20,,paused,Enterprise,4100,844,2026-02-04,382,67.5,98.1,96.3,0.28,2026-03-06,Auto-generated note.
+QUANTUM-BSC_075,Quantum Partners,Advertising,t.harris,2023-03-09,,active,Basic,29.99,14,2026-03-15,3,44.3,81.3,80.7,0.44,2026-03-05,Auto-generated note.
+GAMMA-PRO_076,Gamma Network,Manufacturing,t.harris,2024-07-02,,active,Pro,418.99,28,2026-02-26,4,99.0,71.5,84.0,0.39,2026-02-25,Auto-generated note.
+DELTA-PRO_077,Delta Labs,Aerospace,t.harris,2021-09-02,,active,Pro,418.99,41,2026-02-17,37,13.8,84.3,64.5,0.73,2026-02-12,Auto-generated note.
+APEX-ENT_078,Apex Labs,Food & Beverage,t.harris,2022-07-25,,active,Enterprise,4100,158,2026-02-25,60,70.4,84.0,61.4,0.26,2026-02-17,Auto-generated note.
+NOVA-BSC_079,Nova Solutions,Technology,n.riley,2026-03-01,,trial,Basic,0,10,2026-01-23,10,50.9,,,0.31,2026-01-11,Auto-generated note.
+QUANTUM-PRO_080,Quantum Network,Transportation,k.jones,2021-01-26,,active,Pro,418.99,50,2026-02-20,20,29.5,92.2,64.3,0.18,2026-02-24,Auto-generated note.
+ALPHA-PRO_081,Alpha Network,Food & Beverage,m.davis,2023-08-07,,active,Pro,418.99,67,2026-02-08,42,66.6,96.6,65.4,0.62,2026-02-09,Auto-generated note.
+BETA-ENT_082,Beta Services,Veterinary,t.harris,2026-03-22,,trial,Enterprise,0,642,2026-03-06,380,20.4,,,0.37,2026-03-18,Auto-generated note.
+NEXUS-ENT_083,Nexus Technologies,Agriculture,n.riley,2025-06-11,,active,Enterprise,4100,1837,2026-03-20,508,36.0,94.3,,0.03,2026-01-14,Auto-generated note.
+NOVA-ENT_084,Nova Solutions,Research,k.jones,2020-08-15,2020-11-21,cancelled,Enterprise,4100,1255,2020-10-04,236,52.9,90.3,95.5,0.99,2026-03-01,Auto-generated note.
+QUANTUM-BSC_085,Quantum Network,Research,,2024-05-22,,active,Basic,29.99,10,2026-03-04,1,60.7,97.7,76.7,0.02,2026-02-05,Auto-generated note.
+APEX-PRO_086,Apex Systems,Aerospace,n.riley,2022-12-30,,active,Pro,418.99,85,2026-01-27,21,39.1,85.8,97.1,0.06,2026-03-20,Auto-generated note.
+ZENITH-BSC_087,Zenith Systems,Media,n.riley,2020-02-07,,active,Basic,29.99,2,2026-03-06,1,52.1,90.6,62.0,0.24,2026-02-06,Auto-generated note.
+DELTA-BSC_088,Delta Corp,Transportation,,2023-12-19,,active,Basic,29.99,9,2026-02-02,4,37.6,71.9,67.5,0.11,2026-02-02,Auto-generated note.
+BETA-BSC_089,Beta Group,Marketing,,2026-03-21,,trial,Basic,0,5,2026-03-22,4,67.4,,,0.34,2026-03-17,Auto-generated note.
+NEXUS-BSC_090,Nexus Network,Advertising,t.harris,2020-04-14,2021-08-21,cancelled,Basic,29.99,10,2020-07-13,4,81.9,90.6,97.2,0.81,2026-01-14,Auto-generated note.
+GAMMA-ENT_091,Gamma Corp,Construction,n.riley,2026-02-06,,active,Enterprise,4100,1402,2026-02-20,569,80.3,,,0.31,2026-03-08,Auto-generated note.
+ALPHA-PRO_092,Alpha Partners,Advertising,j.smith,2025-03-04,,active,Pro,418.99,75,2026-02-22,2,50.4,87.3,74.9,0.14,2026-01-17,Auto-generated note.
+NOVA-PRO_093,Nova Partners,Manufacturing,j.smith,2023-01-21,,active,Pro,418.99,29,2026-03-23,18,56.5,92.4,71.8,0.18,2026-03-19,Auto-generated note.
+ZENITH-PRO_094,Zenith Group,Finance,k.jones,2024-08-10,,active,Pro,418.99,33,2026-02-17,24,22.1,71.2,69.9,0.55,2025-12-23,Auto-generated note.
+ALPHA-BSC_095,Alpha Labs,Healthcare,k.jones,2026-02-21,,trial,Basic,0,9,2026-02-17,9,29.8,,,0.36,2026-01-21,Auto-generated note.
+VERTEX-PRO_096,Vertex Network,Transportation,n.riley,2026-03-04,,trial,Pro,0,56,2026-03-12,35,64.6,,,0.73,2026-02-03,Auto-generated note.
+ZENITH-PRO_097,Zenith Group,Automotive,,2023-10-25,2024-03-21,cancelled,Pro,418.99,93,2024-02-14,78,68.4,71.9,93.3,0.9,2026-03-20,Auto-generated note.
+GAMMA-BSC_098,Gamma Partners,Human Resources,k.jones,2024-04-19,,active,Basic,29.99,1,2026-03-05,0,41.6,74.6,72.4,0.46,2025-12-26,Auto-generated note.
+ZENITH-BSC_099,Zenith Solutions,Testing,,2023-08-24,,active,Basic,29.99,2,2026-01-25,0,26.7,85.5,85.4,0.28,2026-03-22,Auto-generated note.
+DELTA-BSC_100,Delta Solutions,Education,n.riley,2025-01-11,,active,Basic,29.99,2,2026-02-12,2,66.2,92.9,70.3,0.06,2026-01-18,Auto-generated note.
+HORIZON-ENT_101,Horizon Solutions,Healthcare,j.smith,2024-07-08,,active,Enterprise,4100,822,2026-02-19,15,64.3,78.3,61.5,0.54,2026-01-13,Auto-generated note.
+VERTEX-BSC_102,Vertex Services,Media,n.riley,2023-04-05,2023-06-06,expired,Basic,29.99,1,2023-04-20,0,78.0,96.0,70.6,0.91,2026-01-12,Auto-generated note.
+DELTA-BSC_103,Delta Group,Energy,m.davis,2021-03-21,,active,Basic,29.99,3,2026-02-16,1,65.0,87.9,69.6,0.78,2026-01-09,Auto-generated note.
+HORIZON-BSC_104,Horizon Systems,Pharmaceutical,,2020-02-10,,active,Basic,29.99,15,2026-03-05,2,22.4,97.2,96.6,0.78,2026-03-11,Auto-generated note.
+ALPHA-ENT_105,Alpha Services,Manufacturing,m.davis,2020-09-02,,active,Enterprise,4100,760,2026-02-14,100,34.6,99.0,83.7,0.55,2025-12-29,Auto-generated note.
+VERTEX-BSC_106,Vertex Services,Government,j.smith,2025-09-19,2026-01-28,cancelled,Basic,29.99,6,2025-11-02,5,51.2,76.8,,0.95,2026-01-05,Auto-generated note.
+QUANTUM-BSC_107,Quantum Network,Automotive,k.jones,2024-08-21,2025-01-22,cancelled,Basic,29.99,10,2025-01-08,2,36.0,90.0,68.6,0.83,2026-01-25,Auto-generated note.
+NEXUS-BSC_108,Nexus Systems,Agriculture,m.davis,2026-03-22,,trial,Basic,0,11,2026-03-02,5,53.5,,,0.57,2026-01-03,Auto-generated note.
+ALPHA-PRO_109,Alpha Labs,Media,,2026-02-27,,trial,Pro,0,54,2026-03-18,37,11.0,,,0.25,2025-12-31,Auto-generated note.
+VERTEX-ENT_110,Vertex Corp,Research,k.jones,2022-02-22,,active,Enterprise,4100,1354,2026-02-16,313,98.0,85.2,79.2,0.03,2026-02-01,Auto-generated note.
+DELTA-BSC_111,Delta Network,Technology,j.smith,2021-01-31,2022-09-25,expired,Basic,29.99,14,2022-09-01,0,94.4,91.6,87.9,0.93,2026-03-14,Auto-generated note.
+HORIZON-BSC_112,Horizon Partners,Biotechnology,,2021-06-09,2025-09-15,cancelled,Basic,29.99,5,2022-10-18,0,72.8,75.9,93.1,0.87,2026-03-13,Auto-generated note.
+QUANTUM-ENT_113,Quantum Labs,Veterinary,,2021-04-10,,active,Enterprise,4100,866,2026-03-08,327,16.2,74.2,94.0,0.25,2026-03-14,Auto-generated note.
+ZENITH-BSC_114,Zenith Partners,Aerospace,j.smith,2020-02-20,2021-02-18,expired,Basic,29.99,3,2020-08-02,0,47.1,74.4,90.4,0.81,2026-01-15,Auto-generated note.
+APEX-ENT_115,Apex Network,Finance,j.smith,2026-02-22,,trial,Enterprise,0,1538,2026-03-03,68,62.4,,,0.77,2026-01-07,Auto-generated note.
+BETA-PRO_116,Beta Network,Pharmaceutical,k.jones,2026-01-23,,paused,Pro,418.99,93,2026-02-20,43,54.0,,,0.38,2026-02-01,Auto-generated note.
+VERTEX-BSC_117,Vertex Solutions,Advertising,m.davis,2025-01-21,,active,Basic,29.99,4,2026-02-10,2,29.1,93.7,92.0,0.56,2026-02-12,Auto-generated note.
+DELTA-PRO_118,Delta Solutions,Media,m.davis,2021-11-14,,active,Pro,418.99,82,2026-03-11,45,15.4,73.1,69.6,0.57,2026-01-20,Auto-generated note.
+HORIZON-PRO_119,Horizon Group,Food & Beverage,n.riley,2025-10-24,,active,Pro,418.99,88,2026-01-24,50,20.3,,,0.06,2026-02-12,Auto-generated note.
+HORIZON-BSC_120,Horizon Corp,Food & Beverage,j.smith,2026-02-22,,trial,Basic,0,6,2026-03-20,5,89.2,,,0.38,2026-01-07,Auto-generated note.
+GAMMA-PRO_121,Gamma Solutions,Transportation,t.harris,2026-03-03,,trial,Pro,0,99,2026-03-21,79,90.2,,,0.58,2026-02-15,Auto-generated note.
+NOVA-ENT_122,Nova Solutions,Biotechnology,k.jones,2026-03-21,,trial,Enterprise,0,1791,2026-03-06,1445,93.8,,,0.26,2026-02-12,Auto-generated note.
+APEX-BSC_123,Apex Solutions,Research,n.riley,2026-02-22,,trial,Basic,0,12,2026-02-18,5,83.0,,,0.64,2026-03-18,Auto-generated note.
+NEXUS-PRO_124,Nexus Network,Healthcare,k.jones,2024-09-03,,active,Pro,418.99,25,2026-02-26,10,50.4,98.5,68.7,0.11,2026-03-21,Auto-generated note.
+DELTA-PRO_125,Delta Labs,Media,t.harris,2021-06-23,,active,Pro,418.99,45,2026-03-21,1,59.7,94.3,95.1,0.11,2026-01-02,Auto-generated note.
+NOVA-BSC_126,Nova Technologies,Wholesale,,2025-10-19,,active,Basic,29.99,14,2026-03-20,1,16.0,,,0.66,2026-02-24,Auto-generated note.
+ALPHA-PRO_127,Alpha Corp,Wholesale,,2024-08-27,,active,Pro,418.99,98,2026-03-15,61,56.3,74.1,78.8,0.08,2026-01-26,Auto-generated note.
+HORIZON-PRO_128,Horizon Technologies,Biotechnology,j.smith,2020-12-26,,active,Pro,418.99,89,2026-01-22,62,17.3,74.2,82.7,0.13,2026-01-10,Auto-generated note.
+DELTA-ENT_129,Delta Technologies,Professional Services,n.riley,2021-09-02,,active,Enterprise,4100,1183,2026-03-19,853,55.2,93.2,65.2,0.26,2026-02-03,Auto-generated note.
+ZENITH-PRO_130,Zenith Group,Technology,,2020-06-19,,active,Pro,418.99,26,2026-03-20,5,30.7,84.3,83.7,0.49,2026-01-03,Auto-generated note.
+VERTEX-ENT_131,Vertex Services,Food & Beverage,k.jones,2022-04-22,,active,Enterprise,4100,783,2026-02-05,344,13.2,98.1,72.1,0.17,2026-03-14,Auto-generated note.
+APEX-ENT_132,Apex Partners,Consulting,t.harris,2026-03-05,,trial,Enterprise,0,993,2026-03-18,376,62.0,,,0.52,2026-03-06,Auto-generated note.
+GAMMA-ENT_133,Gamma Corp,Advertising,n.riley,2024-03-08,,active,Enterprise,4100,688,2026-02-20,32,26.9,77.3,92.3,0.14,2026-03-12,Auto-generated note.
+VERTEX-ENT_134,Vertex Corp,Retail,n.riley,2025-07-12,,active,Enterprise,4100,1700,2026-01-30,231,51.4,82.6,,0.23,2026-02-07,Auto-generated note.
+ALPHA-BSC_135,Alpha Corp,Automotive,,2021-05-30,,active,Basic,29.99,8,2026-02-09,2,27.1,93.6,92.7,0.15,2026-01-14,Auto-generated note.
+HORIZON-PRO_136,Horizon Solutions,Biotechnology,k.jones,2024-09-20,2024-12-10,cancelled,Pro,418.99,22,2024-09-26,14,26.5,91.2,63.4,0.97,2026-02-22,Auto-generated note.
+ZENITH-PRO_137,Zenith Technologies,Testing,k.jones,2026-03-15,,trial,Pro,0,32,2026-03-22,18,83.7,,,0.69,2026-01-26,Auto-generated note.
+QUANTUM-BSC_138,Quantum Systems,Consulting,m.davis,2025-06-13,,active,Basic,29.99,13,2026-03-01,11,57.0,86.8,,0.11,2026-02-23,Auto-generated note.
+ZENITH-BSC_139,Zenith Labs,Advertising,n.riley,2021-07-03,,active,Basic,29.99,9,2026-03-13,6,92.7,85.4,96.4,0.21,2026-03-21,Auto-generated note.
+HORIZON-PRO_140,Horizon Solutions,Energy,t.harris,2024-11-24,,active,Pro,418.99,89,2026-02-13,82,14.2,96.8,70.1,0.64,2026-02-17,Auto-generated note.
+DELTA-ENT_141,Delta Partners,Research,k.jones,2021-05-29,,active,Enterprise,4100,1435,2026-01-28,74,30.9,98.7,63.1,0.12,2026-03-21,Auto-generated note.
+GAMMA-ENT_142,Gamma Solutions,Consulting,,2022-03-29,2025-11-29,cancelled,Enterprise,4100,559,2024-05-11,53,92.6,96.1,96.2,0.82,2026-02-21,Auto-generated note.
+APEX-PRO_143,Apex Labs,Construction,k.jones,2026-03-14,,trial,Pro,0,95,2026-03-06,54,44.0,,,0.12,2026-02-02,Auto-generated note.
+ALPHA-BSC_144,Alpha Group,Construction,,2024-09-19,,active,Basic,29.99,1,2026-02-11,1,77.1,94.8,87.4,0.49,2026-02-20,Auto-generated note.
+VERTEX-BSC_145,Vertex Solutions,Consulting,j.smith,2021-11-08,2023-10-02,cancelled,Basic,29.99,15,2023-01-23,3,13.4,95.1,96.2,0.87,2026-03-19,Auto-generated note.
+NOVA-BSC_146,Nova Technologies,Research,,2023-07-07,,active,Basic,29.99,1,2026-03-21,1,36.2,85.9,66.2,0.48,2026-01-09,Auto-generated note.
+VERTEX-PRO_147,Vertex Corp,Manufacturing,m.davis,2022-10-03,,active,Pro,418.99,37,2026-02-21,1,55.6,94.6,84.3,0.23,2026-02-22,Auto-generated note.
+ALPHA-ENT_148,Alpha Services,Government,t.harris,2022-05-18,,active,Enterprise,4100,1850,2026-02-28,686,59.8,88.0,88.6,0.1,2026-03-03,Auto-generated note.
+APEX-PRO_149,Apex Services,Media,k.jones,2023-04-27,2024-06-23,expired,Pro,418.99,48,2023-07-22,11,32.8,89.3,60.7,0.94,2026-01-13,Auto-generated note.
+GAMMA-PRO_150,Gamma Technologies,Media,t.harris,2024-07-13,,active,Pro,418.99,69,2026-02-03,9,81.9,84.3,61.9,0.39,2026-02-14,Auto-generated note.
+NEXUS-ENT_151,Nexus Group,Energy,j.smith,2024-03-24,,active,Enterprise,4100,1299,2026-02-15,838,65.4,77.3,69.7,0.29,2026-01-28,Auto-generated note.
+NEXUS-ENT_152,Nexus Systems,Media,j.smith,2026-02-25,,trial,Enterprise,0,1962,2026-03-19,1129,30.6,,,0.59,2026-01-18,Auto-generated note.
+NEXUS-PRO_153,Nexus Technologies,Construction,j.smith,2026-01-11,,active,Pro,418.99,63,2026-02-03,38,93.3,,,0.31,2026-02-19,Auto-generated note.
+ALPHA-ENT_154,Alpha Network,Automotive,n.riley,2020-01-27,,active,Enterprise,4100,1848,2026-03-12,1536,38.6,96.4,88.6,0.38,2026-03-03,Auto-generated note.
+QUANTUM-BSC_155,Quantum Labs,Agriculture,k.jones,2023-06-24,2026-01-18,expired,Basic,29.99,4,2024-07-28,0,58.5,82.5,93.8,0.92,2026-01-28,Auto-generated note.
+NEXUS-BSC_156,Nexus Group,Government,k.jones,2025-12-05,,active,Basic,29.99,1,2026-03-12,1,42.1,,,0.16,2026-03-14,Auto-generated note.
+BETA-BSC_157,Beta Network,Advertising,j.smith,2021-07-30,2024-11-24,expired,Basic,29.99,8,2023-06-06,5,11.1,96.4,73.9,0.91,2026-02-24,Auto-generated note.
+HORIZON-PRO_158,Horizon Systems,Veterinary,t.harris,2025-07-06,,active,Pro,418.99,38,2026-03-21,22,27.3,95.1,,0.3,2026-01-06,Auto-generated note.
+VERTEX-BSC_159,Vertex Technologies,Automotive,t.harris,2024-04-29,,active,Basic,29.99,6,2026-01-23,5,57.3,95.9,78.6,0.77,2025-12-28,Auto-generated note.
+ZENITH-PRO_160,Zenith Corp,Aerospace,t.harris,2026-03-09,,trial,Pro,0,53,2026-02-18,51,33.8,,,0.54,2026-03-03,Auto-generated note.
+BETA-PRO_161,Beta Labs,Wholesale,n.riley,2025-04-30,,active,Pro,418.99,84,2026-03-03,17,35.2,85.2,,0.64,2026-03-06,Auto-generated note.
+NOVA-PRO_162,Nova Corp,Human Resources,k.jones,2020-11-20,,active,Pro,418.99,61,2026-02-19,28,41.4,85.0,76.3,0.34,2026-03-09,Auto-generated note.
+QUANTUM-BSC_163,Quantum Technologies,Agriculture,n.riley,2022-06-16,,paused,Basic,29.99,12,2026-02-18,9,71.3,87.6,62.8,0.48,2026-01-25,Auto-generated note.
+DELTA-ENT_164,Delta Services,Food & Beverage,m.davis,2026-03-19,,trial,Enterprise,0,472,2026-03-02,81,52.7,,,0.54,2026-03-11,Auto-generated note.
+ALPHA-BSC_165,Alpha Network,Media,j.smith,2021-07-23,,active,Basic,29.99,2,2026-01-27,0,90.4,80.7,96.8,0.45,2026-02-03,Auto-generated note.
+NOVA-ENT_166,Nova Group,Healthcare,,2020-12-07,,active,Enterprise,4100,665,2026-03-01,569,31.4,91.9,75.0,0.23,2026-02-03,Auto-generated note.
+QUANTUM-PRO_167,Quantum Corp,Energy,n.riley,2025-01-20,,active,Pro,418.99,94,2026-03-12,51,67.2,97.0,65.8,0.67,2026-02-04,Auto-generated note.
+APEX-PRO_168,Apex Partners,Research,k.jones,2020-08-01,,active,Pro,418.99,73,2026-01-25,50,17.7,85.1,67.6,0.52,2026-01-04,Auto-generated note.
+QUANTUM-PRO_169,Quantum Network,Marketing,k.jones,2025-06-10,,active,Pro,418.99,24,2026-03-14,14,73.5,80.8,,0.19,2025-12-27,Auto-generated note.
+VERTEX-PRO_170,Vertex Solutions,Research,m.davis,2021-03-19,,active,Pro,418.99,81,2026-01-29,75,58.3,76.1,90.2,0.04,2026-03-18,Auto-generated note.
+NEXUS-ENT_171,Nexus Group,Finance,t.harris,2021-02-06,,active,Enterprise,4100,1892,2026-02-13,319,17.6,83.1,90.8,0.19,2026-01-13,Auto-generated note.
+NEXUS-ENT_172,Nexus Partners,Finance,k.jones,2023-06-04,,active,Enterprise,4100,1874,2026-02-24,1131,86.0,94.9,71.8,0.14,2026-02-16,Auto-generated note.
+VERTEX-ENT_173,Vertex Labs,Pharmaceutical,,2026-03-13,,trial,Enterprise,0,971,2026-03-16,943,61.1,,,0.27,2026-01-02,Auto-generated note.
+NEXUS-PRO_174,Nexus Group,Marketing,t.harris,2020-01-07,2025-08-20,expired,Pro,418.99,50,2022-01-04,10,55.0,72.4,61.5,0.94,2026-02-21,Auto-generated note.
+BETA-BSC_175,Beta Labs,Advertising,j.smith,2026-02-23,,trial,Basic,0,6,2026-02-08,0,25.4,,,0.59,2026-02-21,Auto-generated note.
+DELTA-BSC_176,Delta Network,Retail,t.harris,2020-02-18,,active,Basic,29.99,8,2026-03-13,5,20.5,77.5,62.5,0.76,2026-02-07,Auto-generated note.
+QUANTUM-PRO_177,Quantum Group,Automotive,,2020-11-25,,active,Pro,418.99,50,2026-02-20,27,36.5,89.4,81.3,0.61,2026-03-07,Auto-generated note.
+ALPHA-BSC_178,Alpha Corp,Marketing,k.jones,2021-10-24,,active,Basic,29.99,13,2026-02-02,4,74.2,82.5,82.2,0.19,2026-01-24,Auto-generated note.
+BETA-BSC_179,Beta Network,Agriculture,j.smith,2020-03-12,,active,Basic,29.99,6,2026-01-22,4,97.6,85.4,86.0,0.36,2025-12-30,Auto-generated note.
+BETA-BSC_180,Beta Systems,Professional Services,k.jones,2020-01-09,,active,Basic,29.99,14,2026-03-13,11,71.5,83.9,91.8,0.04,2026-02-04,Auto-generated note.
+ZENITH-PRO_181,Zenith Network,Technology,n.riley,2023-03-30,,active,Pro,418.99,34,2026-03-20,12,10.4,82.4,86.7,0.08,2026-01-31,Auto-generated note.
+BETA-PRO_182,Beta Systems,Agriculture,j.smith,2026-02-26,,trial,Pro,0,59,2026-02-13,12,51.2,,,0.14,2026-01-28,Auto-generated note.
+BETA-PRO_183,Beta Network,Veterinary,t.harris,2024-07-11,,active,Pro,418.99,18,2026-02-03,16,18.8,97.8,76.0,0.07,2026-02-11,Auto-generated note.
+QUANTUM-BSC_184,Quantum Group,Media,t.harris,2026-03-13,,trial,Basic,0,9,2026-02-11,2,75.3,,,0.01,2026-03-19,Auto-generated note.
+NEXUS-PRO_185,Nexus Corp,Healthcare,m.davis,2026-03-10,,trial,Pro,0,80,2026-01-29,64,61.8,,,0.7,2026-01-03,Auto-generated note.
+DELTA-BSC_186,Delta Technologies,Pharmaceutical,j.smith,2021-07-12,,active,Basic,29.99,1,2026-02-02,0,25.0,98.4,64.7,0.37,2025-12-31,Auto-generated note.
+GAMMA-BSC_187,Gamma Labs,Professional Services,,2023-04-26,2024-10-31,cancelled,Basic,29.99,7,2024-01-02,1,34.2,83.0,86.4,0.87,2026-03-12,Auto-generated note.
+VERTEX-PRO_188,Vertex Group,Technology,t.harris,2026-02-24,,trial,Pro,0,40,2026-03-01,22,61.7,,,0.25,2026-01-10,Auto-generated note.
+DELTA-BSC_189,Delta Corp,Testing,j.smith,2021-05-10,,active,Basic,29.99,9,2026-03-17,5,69.6,97.8,88.5,0.18,2026-03-16,Auto-generated note.
+NEXUS-ENT_190,Nexus Network,Retail,k.jones,2026-02-14,,active,Enterprise,4100,1448,2026-03-15,1445,63.2,,,0.66,2026-01-09,Auto-generated note.
+NOVA-ENT_191,Nova Systems,Veterinary,j.smith,2025-10-16,,active,Enterprise,4100,1931,2026-03-19,1203,65.3,,,0.62,2025-12-26,Auto-generated note.
+HORIZON-ENT_192,Horizon Solutions,Consulting,k.jones,2020-04-17,,paused,Enterprise,4100,114,2026-02-11,49,36.7,75.4,81.1,0.04,2026-01-23,Auto-generated note.
+ZENITH-ENT_193,Zenith Labs,Human Resources,m.davis,2023-05-19,2025-04-05,expired,Enterprise,4100,731,2024-01-12,25,45.1,87.4,68.0,0.8,2026-03-12,Auto-generated note.
+NEXUS-ENT_194,Nexus Group,Professional Services,t.harris,2022-09-22,,active,Enterprise,4100,123,2026-02-21,11,87.0,87.7,76.9,0.17,2026-03-13,Auto-generated note.
+BETA-ENT_195,Beta Network,Testing,k.jones,2023-04-26,,active,Enterprise,4100,1677,2026-01-29,1439,66.4,94.8,88.9,0.37,2026-01-20,Auto-generated note.
+NEXUS-BSC_196,Nexus Solutions,Retail,m.davis,2023-02-28,,active,Basic,29.99,13,2026-02-03,11,41.9,78.7,94.3,0.38,2025-12-26,Auto-generated note.
+GAMMA-ENT_197,Gamma Corp,Marketing,t.harris,2020-08-19,,active,Enterprise,4100,670,2026-03-08,449,80.6,83.9,66.4,0.76,2026-01-01,Auto-generated note.
+HORIZON-BSC_198,Horizon Network,Aerospace,m.davis,2021-03-26,,active,Basic,29.99,3,2026-02-26,2,82.9,94.3,72.2,0.11,2026-02-16,Auto-generated note.
+APEX-ENT_199,Apex Corp,Healthcare,n.riley,2020-10-10,,active,Enterprise,4100,416,2026-01-31,111,38.0,92.9,78.0,0.77,2026-01-18,Auto-generated note.
+VERTEX-ENT_200,Vertex Network,Marketing,m.davis,2020-08-06,,active,Enterprise,4100,1605,2026-03-18,343,72.1,91.6,76.0,0.54,2026-02-08,Auto-generated note.

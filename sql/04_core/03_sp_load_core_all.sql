@@ -1,7 +1,8 @@
-﻿-- ===============================================
--- Orchestrator: Load tất cả core tables (UPSERT)
--- Gọi tuần tự 5 SP từng bảng
--- ===============================================
+﻿-- =============================================
+-- Description: This stored procedure loads all core tables by calling individual stored procedures for each table.
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_core_all
 IF OBJECT_ID('dbo.sp_load_core_all', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_core_all;
 GO

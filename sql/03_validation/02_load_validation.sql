@@ -1,16 +1,16 @@
-/* ===========================
-   load_validation.sql
-   - Materialize validation once into #dq
-   - Split into valid / reject
-   =========================== */
+-- =============================================
+-- Description: Validate data in staging tables and load into validation tables
+-- =============================================
 
+-- Truncate validation tables before loading new data
 TRUNCATE TABLE val.CustomerSuccessValid;
 TRUNCATE TABLE val.CustomerSuccessReject;
 GO
 
+-- Get the latest batch_id from staging.CustomerSuccess
 IF OBJECT_ID('tempdb..#dq','U') IS NOT NULL
     DROP TABLE #dq;
-
+-- Perform data validation and separate valid and invalid records
 SELECT
     s.batch_id,
     s.load_dttm,
@@ -70,6 +70,7 @@ SELECT
 INTO #dq
 FROM stag.CustomerSuccess s;
 
+-- Insert valid records into val.CustomerSuccessValid and invalid records into val.CustomerSuccessReject
 INSERT INTO val.CustomerSuccessValid
 (
     batch_id, load_dttm,

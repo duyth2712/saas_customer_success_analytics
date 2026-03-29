@@ -1,10 +1,14 @@
- 
+-- =============================================
+-- Description:	Create the validation schema and validation data storage tables
+-- =============================================
+
+-- Create val schema
 IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'val')
 BEGIN
     EXEC('CREATE SCHEMA val');
 END;
 GO
-
+-- DDL for val.CustomerSuccessValid table
 IF OBJECT_ID('val.CustomerSuccessValid', 'U') IS NOT NULL
     DROP TABLE val.CustomerSuccessValid;
 GO
@@ -40,7 +44,7 @@ CREATE TABLE val.CustomerSuccessValid
         PRIMARY KEY (batch_id, customer_id)
 );
 GO
-
+-- DDL for val.CustomerSuccessReject table
 IF OBJECT_ID('val.CustomerSuccessReject', 'U') IS NOT NULL
     DROP TABLE val.CustomerSuccessReject;
 GO
@@ -81,6 +85,7 @@ CREATE TABLE val.CustomerSuccessReject
 );
 GO
 
+-- Create indexes on validation tables for faster querying
 CREATE INDEX IX_val_customer_success_valid_customer_id
 ON val.CustomerSuccessValid(customer_id);
 GO

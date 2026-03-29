@@ -1,4 +1,8 @@
-﻿-- 1. Active Customers & MRR by plan_type
+﻿-- =============================================
+-- Description:	This script contains SQL queries to analyze key SaaS metrics such as active customers, MRR, churn rate, engagement, retention, and CS activity. These insights help drive data-informed decisions for customer success strategies.
+-- =============================================
+
+-- 1. Active Customers & MRR by plan_type
 -- Description: Shows monthly active customers and total MRR 
 -- Insight: Measures growth and revenue per plan type, helps identify top-performing plans
 SELECT

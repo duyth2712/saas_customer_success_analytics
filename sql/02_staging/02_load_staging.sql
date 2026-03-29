@@ -1,14 +1,17 @@
-﻿DECLARE @batch_id BIGINT =
+﻿-- =============================================
+-- Description:	Load data into staging tables
+-- =============================================
+
+-- Get the latest batch_id from raw.LoadRun
+DECLARE @batch_id BIGINT =
 (
     SELECT MAX(batch_id) FROM raw.LoadRun
 );
-
+-- Delete existing records for the batch_id in staging table to avoid duplicates
 DELETE FROM stag.CustomerSuccess
-WHERE batch_id = @batch_id
+WHERE batch_id = @batch_id;
 
---TRUNCATE TABLE stag.CustomerSuccess;
---GO
-
+-- Insert data into staging table
 INSERT INTO stag.CustomerSuccess
 (	
 	batch_id,

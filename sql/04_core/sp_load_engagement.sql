@@ -1,3 +1,8 @@
+-- =============================================
+-- Description:	Load data into the Engagement table
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_Engagement
 IF OBJECT_ID('dbo.sp_load_engagement', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_engagement;
 GO

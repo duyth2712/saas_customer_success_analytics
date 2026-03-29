@@ -1,3 +1,7 @@
+-- =============================================
+-- Description:	Create the raw schema and raw data storage tables
+-- =============================================
+
 -- Create raw schema
 IF NOT EXISTS (
     SELECT 1 

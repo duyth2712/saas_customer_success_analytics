@@ -1,4 +1,8 @@
-﻿-- DDL for Table DimDate
+﻿-- =============================================
+-- Description:	Create the DimDate dimension table
+-- =============================================
+
+-- DDL for Table DimDate
 IF EXISTS (SELECT 1 FROM sys.tables WHERE name = 'DimDate' AND schema_id = SCHEMA_ID('dbo'))
     DROP TABLE dbo.DimDate;
 GO

@@ -1,4 +1,9 @@
-﻿IF OBJECT_ID('dbo.sp_load_customer', 'P') IS NOT NULL
+﻿-- =============================================
+-- Description:	Load data into the Customer table
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_Customer
+IF OBJECT_ID('dbo.sp_load_customer', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_customer;
 GO
 

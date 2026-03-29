@@ -1,3 +1,8 @@
+-- =============================================
+-- Description:	Load data into the RetentionRisk table
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_RetentionRisk
 IF OBJECT_ID('dbo.sp_load_retention_risk', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_retention_risk;
 GO

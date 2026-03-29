@@ -1,4 +1,8 @@
-﻿--  DDL for Table Customer
+﻿-- =============================================
+-- Description:	Create core tables in the dbo schema for customer success analytics
+-- =============================================
+
+--  DDL for Table Customer
 IF NOT EXISTS ( SELECT 1 FROM sys.tables WHERE name = 'Customer' AND schema_id = (SELECT schema_id FROM sys.schemas WHERE name='dbo'))
 CREATE TABLE dbo.Customer (
     customer_id NVARCHAR(50) NOT NULL,

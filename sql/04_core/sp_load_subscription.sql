@@ -1,3 +1,8 @@
+-- =============================================
+-- Description:	Load data into the Subscription table
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_Subscription
 IF OBJECT_ID('dbo.sp_load_subscription', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_subscription;
 GO

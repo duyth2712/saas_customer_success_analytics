@@ -1,5 +1,10 @@
+-- =============================================
+-- Description:	Load data into raw tables
+-- =============================================
+
 -- File path
-DECLARE @FilePath NVARCHAR(4000) = N'C:\GIT\saas_cs_analytics\data\b2b-saas-usage-retention.csv';
+--DECLARE @FilePath NVARCHAR(4000) = N'C:\GIT\saas_cs_analytics\data\b2b-saas-usage-retention.csv';
+DECLARE @FilePath NVARCHAR(4000) = N'C:\GIT\saas_cs_analytics\data\b2b-saas-usage-retention-p2.csv';
 DECLARE @sql NVARCHAR(MAX);
 
 -- Clear temp table

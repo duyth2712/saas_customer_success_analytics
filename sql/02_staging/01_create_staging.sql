@@ -1,3 +1,7 @@
+-- =============================================
+-- Description:	Create the staging schema and staging data storage tables
+-- =============================================
+
 -- Create stag schema
 IF NOT EXISTS (
     SELECT 1 

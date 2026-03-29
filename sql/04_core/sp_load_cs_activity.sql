@@ -1,4 +1,9 @@
-﻿IF OBJECT_ID('dbo.sp_load_CsActivity', 'P') IS NOT NULL
+﻿-- =============================================
+-- Description:	Load data into the CsActivity table
+-- =============================================
+
+-- DDL for Stored Procedure sp_load_CsActivity
+IF OBJECT_ID('dbo.sp_load_CsActivity', 'P') IS NOT NULL
     DROP PROCEDURE dbo.sp_load_CsActivity;
 GO
 
