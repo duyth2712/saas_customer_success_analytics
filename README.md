@@ -118,48 +118,88 @@ saas_cs_analytics/
 ### Quick Start
 
 **Step 1: Initialize Raw Layer**
+
+Execute scripts in SQL Server Management Studio (SSMS):
 ```sql
--- Create raw data schema
-EXEC sp_executesql N'
-  GO sql/01_raw/01_create_raw.sql
-  GO sql/01_raw/02_load_raw.sql
-'
+-- Run each file separately in SSMS (GO separates batches)
+:r sql/01_raw/01_create_raw.sql
+GO
+
+:r sql/01_raw/02_load_raw.sql
+GO
 ```
 
 **Step 2: Run Staging Transformations**
 ```sql
 -- Execute staging layer transformations
-sql/02_staging/01_create_staging.sql
-sql/02_staging/02_load_staging.sql
+:r sql/02_staging/01_create_staging.sql
+GO
+
+:r sql/02_staging/02_load_staging.sql
+GO
 ```
 
 **Step 3: Data Quality Validation**
 ```sql
 -- Run validation checks
-sql/03_validation/01_create_validation_table.sql
-sql/03_validation/02_load_validation.sql
+:r sql/03_validation/01_create_validation_table.sql
+GO
+
+:r sql/03_validation/02_load_validation.sql
+GO
 ```
 
 **Step 4: Build Core Data Model**
 ```sql
 -- Create dimensional tables and facts
-sql/04_core/01_create_core.sql
-sql/04_core/02_create_DimDate.sql
+:r sql/04_core/01_create_core.sql
+GO
 
--- Optional: Run orchestration SP
+:r sql/04_core/02_create_DimDate.sql
+GO
+
+-- Then execute orchestration procedure
 EXEC sp_load_core_all;
 ```
 
 **Step 5: Execute Analytics Queries**
 ```sql
--- Run analytical queries
-sql/05_analytic/01_analytics.sql
+-- Run all analytical queries
+:r sql/05_analytic/01_analytics.sql
+GO
 
--- Access pre-built queries:
--- • Active Customers & MRR Analysis
--- • Monthly Churn Rate Calculations
--- • Engagement & Feature Usage Trends
--- • Retention Cohort Analysis
+-- Available pre-built queries:
+-- 1. Active Customers & MRR by Plan Type
+-- 2. Monthly Churn Rate with Trend Analysis
+-- 3. Feature Adoption & Engagement Trends
+-- 4. Retention Cohort Analysis
+-- 5. Churn Risk Scoring
+```
+
+**Alternative: Using PowerShell (Batch Execution)**
+```powershell
+$server = "YOUR_SERVER"
+$database = "YOUR_DATABASE"
+
+# Layer 1: Raw data
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/01_raw/01_create_raw.sql"
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/01_raw/02_load_raw.sql"
+
+# Layer 2: Staging
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/02_staging/01_create_staging.sql"
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/02_staging/02_load_staging.sql"
+
+# Layer 3: Validation
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/03_validation/01_create_validation_table.sql"
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/03_validation/02_load_validation.sql"
+
+# Layer 4: Core
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/04_core/01_create_core.sql"
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/04_core/02_create_DimDate.sql"
+Invoke-Sqlcmd -ServerInstance $server -Database $database -Query "EXEC sp_load_core_all;"
+
+# Layer 5: Analytics
+Invoke-Sqlcmd -ServerInstance $server -Database $database -InputFile "sql/05_analytic/01_analytics.sql"
 ```
 
 ---
